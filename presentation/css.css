@@ -1,0 +1,27 @@
+body {
+    background: #265E98;
+    margin:50px;
+    border:1px solid black;
+    padding: 10px;
+    color: aliceblue;
+    font-family: Arial, Verdana, "Microsoft Sans Serif";
+}
+h1, h2, h3, h4 {
+    color:white;
+}
+.better {
+    border:1px solid black;
+    padding:15px;
+    background: lightgray;
+    color: #265E98;
+    border-radius:20px;
+    min-height: 400px;
+}
+a {
+    color:black;
+    font-style: italic;
+}
+img {
+    float:right;
+    margin-left:35px;
+}
