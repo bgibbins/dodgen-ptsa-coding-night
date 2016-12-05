@@ -5,27 +5,53 @@ body {
     color: white;
     font-family: Arial, Verdana, "Microsoft Sans Serif"
 }
+h1 {
+    text-shadow: 5px 5px 5px #000000;
+}
 #container {
     margin:auto;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
 }
 #row1, #row2, #row3, #row4 {
     margin:auto;
     width:100%;
+    height: 150px;
     text-align: center;
-    float: left;
+    clear: both;
 }
-#row1 div, #row2 div, #row3 div, #row4 div {
-    width: 15%;
+
+div.deskSpace {
+    width:25%;
+    height: 200px;
+    float:left;
+    text-align: center;
+}
+div.buttonSpace {
+    width:33%;
+    height: 60px;
+    float:left;
+    text-align: center;
+}
+#desk1, #desk2, #desk3, #desk4,
+#desk5, #desk6, #desk7, #desk8,
+#desk9, #desk10, #desk11, #desk12 {
+    width: 90%;
     height: 100px;
     float: left;
-    border: 1px solid gray;
-    margin-left: 10px;
-    margin-bottom:50px;
+    border: 1px solid black;
+    margin:10px;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 15px;
     border-radius: 4px;
     background: saddlebrown;
-    color:white
+    color:white;
+    border-radius: 10px;
+    font-size: 24px;
+    /*-webkit-box-shadow: none;*/
+    /*-moz-box-shadow: none;*/
+    box-shadow: 5px 5px 5px #333333;
 }
 #classes {
     text-align: center;
@@ -36,11 +62,12 @@ body {
 div.button {
     border: 1px solid black;
     width: 300px;
-    height: 50px;
+    height: 25px;
     border-radius: 25px;
     text-align: center;
     margin-bottom: 5px;
     clear:both;
     padding-top: 15px;
     background: gray;
+    color: aliceblue;
 }
