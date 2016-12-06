@@ -7,6 +7,7 @@ body {
 }
 h1 {
     text-shadow: 5px 5px 5px #000000;
+    font-size: 42px;
 }
 #container {
     margin:auto;
@@ -61,15 +62,17 @@ div.buttonSpace {
     width: 90%;
     height: 100px;
     float: left;
-    border: 1px solid black;
+    border: 2px solid black;
     margin:10px;
     text-align: center;
     padding-top: 15px;
     border-radius: 4px;
     background: saddlebrown;
-    color:white;
+    background-image: url("seamless-wood-texture-free-35.jpg");
+    color:#333333;
     border-radius: 10px;
     font-size: 24px;
+    font-weight: bold;
     /*-webkit-box-shadow: none;*/
     /*-moz-box-shadow: none;*/
     box-shadow: 5px 5px 5px #333333;
@@ -81,15 +84,19 @@ div.buttonSpace {
     height: 150px;
 }
 div.button {
-    border: 1px solid black;
-    width: 75%;
+    border: 3px #666666 groove;
+    width: 90%;
     height: 35px;
     border-radius: 25px;
     text-align: center;
+    font-size:20px;
+    letter-spacing: 2px;
     margin: auto;
     padding-top: 15px;
+    font-weight: bold;
     background: gray;
-    color: aliceblue;
-    text-shadow: 2px 2px 2px #000000;
+    background: url("20-brushed-seamless-texture.jpg");
+    color: black;
+    text-shadow: 1px 1px 1px aliceblue;
     box-shadow: 5px 5px 5px #333333;
 }
