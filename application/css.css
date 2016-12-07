@@ -32,6 +32,8 @@ h1 {
     height:100px;
     float:left;
     border-radius: 50px;
+    -webkit-box-shadow: 5px 5px 5px #333333;
+    -moz-box-shadow: 5px 5px 5px #333333;
     box-shadow: 5px 5px 5px #333333;
 }
 #header img {
@@ -66,15 +68,14 @@ div.buttonSpace {
     margin:10px;
     text-align: center;
     padding-top: 15px;
-    border-radius: 4px;
     background: saddlebrown;
     background-image: url("img_wood.jpg");
     color:#333333;
     border-radius: 10px;
     font-size: 24px;
     font-weight: bold;
-    /*-webkit-box-shadow: none;*/
-    /*-moz-box-shadow: none;*/
+    -webkit-box-shadow: 5px 5px 5px #333333;
+    -moz-box-shadow: 5px 5px 5px #333333;
     box-shadow: 5px 5px 5px #333333;
 }
 #classes {
@@ -97,6 +98,8 @@ div.button {
     background: gray;
     background: url("img_steel.jpg");
     color: black;
-    text-shadow: 1px 1px 1px aliceblue;
+    text-shadow: 1px 1px 1px #F0F8FF;
+    -webkit-box-shadow: 5px 5px 5px #333333;
+    -moz-box-shadow: 5px 5px 5px #333333;
     box-shadow: 5px 5px 5px #333333;
 }
