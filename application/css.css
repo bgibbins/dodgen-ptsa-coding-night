@@ -68,7 +68,7 @@ div.buttonSpace {
     padding-top: 15px;
     border-radius: 4px;
     background: saddlebrown;
-    background-image: url("seamless-wood-texture-free-35.jpg");
+    background-image: url("img_wood.jpg");
     color:#333333;
     border-radius: 10px;
     font-size: 24px;
@@ -95,7 +95,7 @@ div.button {
     padding-top: 15px;
     font-weight: bold;
     background: gray;
-    background: url("20-brushed-seamless-texture.jpg");
+    background: url("img_steel.jpg");
     color: black;
     text-shadow: 1px 1px 1px aliceblue;
     box-shadow: 5px 5px 5px #333333;

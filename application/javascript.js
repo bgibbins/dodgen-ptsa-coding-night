@@ -1,9 +1,8 @@
 /**
- * Created by briangibbins on 12/3/16.
+ * Created by Brian Gibbins on 12/3/16
+ * loads classroom data from button press
  */
 function myClassRoom(id) {
-    // data = JSON.parse(loadStudents(id));
-    data = loadStudents(id);
     switch (id) {
         case 1:
             period = "Spanish";
@@ -15,12 +14,18 @@ function myClassRoom(id) {
             period = "Georgia Studies";
             break;
         default:
-            period = "Free Period";
+            period = "Dodgen Middle School";
             break;
     }
     document.getElementById(["period"]).innerHTML = period;
+    data = loadStudents(id);
     for (var i in data.students) {
         document.getElementById(data.students[i].desk).innerHTML = data.students[i].first + "<br>" + data.students[i].last;
+        /**
+         * I left this comment in for demonstration purposes
+         * See if you can add the student grade to the console log,
+         * then add it to the desk with the name
+         */
         console.log(data.students[i].first + " " + data.students[i].last + " - " + data.students[i].desk);
     }
 }
@@ -28,7 +33,7 @@ function myClassRoom(id) {
 /**
  * This would likely come from a server or a local database
  * and is included here for demonstration purposes.
- * Names are fictitious and any resemblence to real persons is
+ * Names are fictitious and any resemblance to real persons is
  * coincidence.
  *
  * @param id
@@ -42,73 +47,73 @@ function loadStudents(id) {
                     "desk": "desk1",
                     "first": "Ansley",
                     "last": "Davis",
-                    "gender": "f"
+                    "grade": "A"
                 },
                 {
                     "desk": "desk2",
                     "first": "Mark",
                     "last": "Miller",
-                    "gender": "m"
+                    "grade": "B+"
                 },
                 {
                     "desk": "desk3",
                     "first": "Michael",
                     "last": "Wilson",
-                    "gender": "m"
+                    "grade": "C+"
                 },
                 {
                     "desk": "desk4",
                     "first": "Max",
                     "last": "Moore",
-                    "gender": "m"
+                    "grade": "A-"
                 },
                 {
                     "desk": "desk5",
                     "first": "Logan",
                     "last": "Taylor",
-                    "gender": "f"
+                    "grade": "A-"
                 },
                 {
                     "desk": "desk6",
                     "first": "Angelica",
                     "last": "Anderson",
-                    "gender": "f"
+                    "grade": "B-"
                 },
                 {
                     "desk": "desk7",
                     "first": "Alexander",
                     "last": "Thomas",
-                    "gender": "m"
+                    "grade": "B"
                 },
                 {
                     "desk": "desk8",
                     "first": "Elizabeth",
                     "last": "Jackson",
-                    "gender": "f"
+                    "grade": "A"
                 },
                 {
                     "desk": "desk9",
                     "first": "Gabriella",
                     "last": "White",
-                    "gender": "f"
+                    "grade": "B-"
                 },
                 {
                     "desk": "desk10",
                     "first": "Jacob",
                     "last": "Harris",
-                    "gender": "m"
+                    "grade": "A"
                 },
                 {
                     "desk": "desk11",
                     "first": "Isabelle",
                     "last": "Martin",
-                    "gender": "f"
+                    "grade": "B"
                 },
                 {
                     "desk": "desk12",
                     "first": "Layla",
                     "last": "Thompson",
-                    "gender": "f"
+                    "grade": "C"
                 }
             ]};
             break;
@@ -118,73 +123,73 @@ function loadStudents(id) {
                      "desk": "desk1",
                      "first": "Charlotte",
                      "last": "Clark",
-                     "gender": "f"
+                     "grade": "A"
                  },
                  {
                      "desk": "desk2",
                      "first": "Megan",
                      "last": "Hall",
-                     "gender": "f"
+                     "grade": "B"
                  },
                  {
                      "desk": "desk3",
                      "first": "Madeline",
                      "last": "Allen",
-                     "gender": "f"
+                     "grade": "C"
                  },
                  {
                      "desk": "desk4",
                      "first": "Mackenzie",
                      "last": "King",
-                     "gender": "f"
+                     "grade": "A"
                  },
                  {
                      "desk": "desk5",
                      "first": "Olivia",
                      "last": "Hill",
-                     "gender": "f"
+                     "grade": "A"
                  },
                  {
                      "desk": "desk6",
                      "first": "Kevin",
                      "last": "Turner",
-                     "gender": "m"
+                     "grade": "C"
                  },
                  {
                      "desk": "desk7",
                      "first": "John",
                      "last": "Phillips",
-                     "gender": "m"
+                     "grade": "A"
                  },
                  {
                      "desk": "desk8",
                      "first": "Aaron",
                      "last": "Parker",
-                     "gender": "m"
+                     "grade": "A"
                  },
                  {
                      "desk": "desk9",
                      "first": "Alex",
                      "last": "Evans",
-                     "gender": "m"
+                     "grade": "A"
                  },
                  {
                      "desk": "desk10",
                      "first": "Abigail",
                      "last": "Edwards",
-                     "gender": "f"
+                     "grade": "B"
                  },
                  {
                      "desk": "desk11",
                      "first": "Andrea",
                      "last": "Collins",
-                     "gender": "f"
+                     "grade": "B+"
                  },
                  {
                      "desk": "desk12",
                      "first": "Daniel",
                      "last": "Stewart",
-                     "gender": "m"
+                     "grade": "A-"
                  }
              ]};
              break;
@@ -193,74 +198,74 @@ function loadStudents(id) {
                  {
                      "desk": "desk1",
                      "first": "Lucas",
-                     "last": "Cox",
-                     "gender": "m"
+                     "last": "Fox",
+                     "grade": "A"
                  },
                  {
                      "desk": "desk2",
                      "first": "MJ",
                      "last": "Gray",
-                     "gender": "m"
+                     "grade": "B"
                  },
                  {
                      "desk": "desk3",
                      "first": "Cassidy",
                      "last": "James",
-                     "gender": "f"
+                     "grade": "A"
                  },
                  {
                      "desk": "desk4",
                      "first": "Marcus",
                      "last": "Watson",
-                     "gender": "m"
+                     "grade": "B"
                  },
                  {
                      "desk": "desk5",
                      "first": "Martha",
                      "last": "Long",
-                     "gender": "f"
+                     "grade": "B"
                  },
                  {
                      "desk": "desk6",
                      "first": "Tyler",
                      "last": "Patterson",
-                     "gender": "m"
+                     "grade": "B-"
                  },
                  {
                      "desk": "desk7",
                      "first": "Rachel",
                      "last": "Hughes",
-                     "gender": "f"
+                     "grade": "B"
                  },
                  {
                      "desk": "desk8",
                      "first": "Sydney",
                      "last": "Foster",
-                     "gender": "f"
+                     "grade": "A"
                  },
                  {
                      "desk": "desk9",
                      "first": "Patrick",
                      "last": "Wells",
-                     "gender": "m"
+                     "grade": "B"
                  },
                  {
                      "desk": "desk10",
                      "first": "Nivia",
                      "last": "Hamilton",
-                     "gender": "f"
+                     "grade": "C"
                  },
                  {
                      "desk": "desk11",
                      "first": "Jaden",
                      "last": "Eliis",
-                     "gender": "m"
+                     "grade": "B"
                  },
                  {
                      "desk": "desk12",
                      "first": "Carter",
                      "last": "Harris",
-                     "gender": "m"
+                     "grade": "B"
                  }
              ]};
              break;
